@@ -16,6 +16,18 @@ const App = () => {
       },
     });
     await app.mount();
+    const app3 = await Garfish.loadApp('app3', {
+      entry: 'http://localhost:3003',
+      basename: '/',
+      domGetter: '#container2',
+      sandbox: {
+        fixBaseUrl: true,
+      },
+      props: {
+        msg: 'hello world',
+      },
+    });
+    await app3.mount();
   });
 
   return (
@@ -25,10 +37,14 @@ const App = () => {
         padding: '10px',
         textAlign: 'center',
         backgroundColor: 'greenyellow',
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
       <h1>Main App</h1>
       <div id="container"></div>
+      <hr />
+      <div id="container2"></div>
     </div>
   );
 };
