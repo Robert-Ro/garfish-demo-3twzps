@@ -16,7 +16,7 @@ const App = ({ props }) => {
           backgroundColor: 'cyan',
         }}
       >
-        <h1>Sub App 2</h1>
+        <h1>Sub App 212</h1>
         <nav
           style={{
             borderBottom: 'solid 1px',
