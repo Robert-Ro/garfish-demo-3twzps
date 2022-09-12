@@ -10,7 +10,7 @@ import { vueBridge } from '@garfish/bridge-vue-v3';
 import { createRouter, createWebHistory } from "vue-router";
 
 
-function newRouter(basename) {
+function newRouter(basename:string) {
   const router = createRouter({
     history: createWebHistory(basename),
     routes,
@@ -35,5 +35,5 @@ if (!window.__GARFISH__) {
   const vueInstance = createApp(App);
   vueInstance.config.globalProperties.$message = message;
   vueInstance.use(newRouter('/')).use(Antd)
-  vueInstance.mount(document.querySelector('#app'));
+  vueInstance.mount(document.querySelector('#app')!);
 }
