@@ -22,5 +22,9 @@
    "solidjs-taste": {
     "pkgName": "@liutsing/solidjs-taste",
     "port": 5070
+   },
+   "react-taste": {
+    "pkgName": "@liutsing/react-taste",
+    "port": 5080
    }
 }

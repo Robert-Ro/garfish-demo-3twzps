@@ -1,0 +1,13 @@
+.container {
+  width: 400px;
+  max-height: 400px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: no-warp;
+}
+
+.container img {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}

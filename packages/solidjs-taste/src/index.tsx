@@ -23,6 +23,7 @@ export const provider = () => ({
   // destroy 应用销毁函数，必须提供
   destroy: ({ dom, basename }: parameter) => {
     console.log(dom, basename)
+
     // 使用框架提供的销毁函数销毁整个应用，已达到销毁框架中可能存在得副作用，并触发应用中的一些组件销毁函数
     // 需要注意的时一定要保证对应框架得销毁函数使用正确，否则可能导致子应用未正常卸载影响其他子应用
       // FIXME dom ? dom.querySelector('#root') : document.querySelector('#root'),
