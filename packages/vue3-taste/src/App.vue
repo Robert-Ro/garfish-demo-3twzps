@@ -13,15 +13,6 @@
     <footer>powered by vscode</footer>
   </main>
 </template>
-    </nav>
-  </aside>
-  <main class="main">
-    <header>Vue3 + TS</header>
-    <RouterView class="content" />
-    <footer>powered by vscode</footer>
-  </main>
-</template>
-<<<<<<< HEAD
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";

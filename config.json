@@ -13,14 +13,14 @@
    },
    "vue3-taste": {
     "pkgName": "@liutsing/vue3-taste",
-    "port": 5050
+    "port": 5055
    },
    "solid-taste": {
     "pkgName": "@liutsing/solid-taste",
-    "port": 5055
+    "port": 5060
    },
    "svelte-taste": {
     "pkgName": "@liutsing/svelte-taste",
-    "port": 5060
+    "port": 5065
    }
 }

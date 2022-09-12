@@ -1,8 +1,7 @@
-import * as VueRouter from "vue-router";
 import { h } from "vue";
 import { dynamicRoutes } from "@/utils";
 
-const routes = [
+export const routes = [
   {
     path: "/",
     component: {
@@ -11,10 +10,3 @@ const routes = [
   },
   ...dynamicRoutes,
 ];
-
-const router = VueRouter.createRouter({
-  history: VueRouter.createWebHistory(),
-  routes,
-});
-
-export default router;
