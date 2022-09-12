@@ -4,7 +4,7 @@ const ExternalTemplateRemotesPlugin = require('external-remotes-plugin');
 const path = require('path');
 
 const { getPort, getPublicPath } = require('../../util')
-const appName = 'app/main'
+const appName = 'main'
 
 module.exports = {
   entry: './src/index',

@@ -14,6 +14,7 @@ const App = () => {
       }}
     >
       <h1>Main App</h1>
+      <div id="container"></div>
     </div>
   );
 };

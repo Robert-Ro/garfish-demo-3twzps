@@ -3,7 +3,7 @@ const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
 
 const { getPort, getPublicPath } = require('../../util')
-const appName = 'app/sub'
+const appName = 'sub'
 
 module.exports = {
   entry: './src/index',

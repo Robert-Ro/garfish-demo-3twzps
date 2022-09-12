@@ -1,25 +1,25 @@
 {
-  "app/main": {
+  "main": {
     "pkgName": "@liutsing/main",
     "port": 5090
    },
-  "app/sub": {
+  "sub": {
     "pkgName": "@liutsing/sub",
     "port": 5040
    },
-  "app/count-down": {
+  "count-down": {
     "pkgName": "@liutsing/count-down",
     "port": 5050
    },
-   "app/vue3-taste": {
+   "vue3-taste": {
     "pkgName": "@liutsing/vue3-taste",
     "port": 5050
    },
-   "app/solid-taste": {
+   "solid-taste": {
     "pkgName": "@liutsing/solid-taste",
     "port": 5055
    },
-   "app/svelte-taste": {
+   "svelte-taste": {
     "pkgName": "@liutsing/svelte-taste",
     "port": 5060
    }
