@@ -13,6 +13,7 @@ module.exports = {
     },
     allowedHosts: 'all',
   },
+  cache: true,
   output: {
     libraryTarget: 'umd',
     globalObject: 'window',
@@ -21,11 +22,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(j|t)sx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
         options: {
-          presets: ['@babel/preset-react'],
+          presets: ['@babel/preset-react', '@babel/preset-typescript'],
         },
       },
     ],

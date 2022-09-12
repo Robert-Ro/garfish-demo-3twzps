@@ -3,12 +3,28 @@
   "private": true,
   "scripts": {
     "bootstrap": "pnpm i",
+    "dev": "tsx ./scripts/dev.ts",
+    "dev:main": "pnpm run dev --app main",
+    "dev:subapp1": "pnpm run dev --app sub",
+    "dev:subapp2": "pnpm run dev --app count-down2",
+    "dev:subapp3": "pnpm run dev --app count-down",
     "prettier": "prettier --write --ignore-unknown '**/*'",
     "lint": "eslint --ext .js,.ts,.vue --fix ./packages/*/src"
   },
   "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-typescript": "^7.18.6",
     "@garfish/bridge": "^1.5.2",
+    "cross-env": "^7.0.3",
+    "execa": "^6.1.0",
     "garfish": "^1.5.2",
+    "minimist": "^1.2.6",
+    "picocolors": "^1.0.0",
+    "tsx": "^3.9.0",
+    "typescript": "^4.8.3",
     "vue": "^3.2.39"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.19"
   }
 }

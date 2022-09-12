@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import { getWeekNumber } from '@maple/utils'
 
-function Home({ msg }) {
-  return <div>home msg: {msg}</div>;
+function Home() {
+  const weekNum = getWeekNumber()
+  return <div>Current Weeknum: {weekNum}</div>;
 }
 
 const App = ({ props }) => {
@@ -16,20 +18,8 @@ const App = ({ props }) => {
           backgroundColor: 'cyan',
         }}
       >
-        <h1>Sub App 212</h1>
-        <nav
-          style={{
-            borderBottom: 'solid 1px',
-            paddingBottom: '1rem',
-          }}
-        >
-          <Link to="/">Home</Link> | <Link to="/invoices">Invoices</Link> |{' '}
-          <Link to="/expenses">Expenses</Link>
-        </nav>
         <Routes>
-          <Route path="/" element={<Home msg={props.msg} />} />
-          <Route path="expenses" element={<Expenses />} />
-          <Route path="invoices" element={<Invoices />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </BrowserRouter>
