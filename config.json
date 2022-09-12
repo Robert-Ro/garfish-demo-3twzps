@@ -1,0 +1,22 @@
+{
+  "app/main": {
+    "pkgName": "@liutsing/main",
+    "port": 4090
+   },
+  "app/count-down": {
+    "pkgName": "@liutsing/count-down",
+    "port": 4050
+   },
+   "app/vue3-taste": {
+    "pkgName": "@liutsing/vue3-taste",
+    "port": 4050
+   },
+   "app/solid-taste": {
+    "pkgName": "@liutsing/solid-taste",
+    "port": 4055
+   },
+   "app/svelte-taste": {
+    "pkgName": "@liutsing/svelte-taste",
+    "port": 4060
+   }
+}

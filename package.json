@@ -6,8 +6,7 @@
     "dev": "tsx ./scripts/dev.ts",
     "dev:main": "pnpm run dev --app main",
     "dev:subapp1": "pnpm run dev --app sub",
-    "dev:subapp2": "pnpm run dev --app count-down2",
-    "dev:subapp3": "pnpm run dev --app count-down",
+    "subapp2": "pnpm run dev --app count-down",
     "prettier": "prettier --write --ignore-unknown '**/*'",
     "lint": "eslint --ext .js,.ts,.vue --fix ./packages/*/src"
   },
