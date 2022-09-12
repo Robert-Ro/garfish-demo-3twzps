@@ -2,12 +2,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
 
+const { getPort, getPublicPath } = require('../../util')
+const appName = 'app/sub'
+
 module.exports = {
   entry: './src/index',
   mode: 'development',
   devServer: {
     static: path.join(__dirname, 'dist'),
-    port: 3002,
+    port: getPort(appName),
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
@@ -16,7 +19,7 @@ module.exports = {
   output: {
     libraryTarget: 'umd',
     globalObject: 'window',
-    publicPath: 'http://localhost:3002/',
+    publicPath: getPublicPath(appName),
   },
   module: {
     rules: [

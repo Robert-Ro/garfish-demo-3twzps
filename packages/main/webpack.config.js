@@ -3,16 +3,19 @@ const { ModuleFederationPlugin } = require('webpack').container;
 const ExternalTemplateRemotesPlugin = require('external-remotes-plugin');
 const path = require('path');
 
+const { getPort, getPublicPath } = require('../../util')
+const appName = 'app/main'
+
 module.exports = {
   entry: './src/index',
   mode: 'development',
   devServer: {
     static: path.join(__dirname, 'dist'),
-    port: 3001,
+    port: getPort(appName),
     historyApiFallback: true,
   },
   output: {
-    publicPath: 'auto',
+    publicPath: getPublicPath(appName),
   },
   module: {
     rules: [
