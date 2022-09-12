@@ -15,12 +15,12 @@
     "pkgName": "@liutsing/vue3-taste",
     "port": 5055
    },
-   "solidjs-taste": {
-    "pkgName": "@liutsing/solidjs-taste",
-    "port": 5070
-   },
    "svelte-taste": {
     "pkgName": "@liutsing/svelte-taste",
     "port": 5065
+   },
+   "solidjs-taste": {
+    "pkgName": "@liutsing/solidjs-taste",
+    "port": 5070
    }
 }

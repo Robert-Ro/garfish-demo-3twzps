@@ -2,8 +2,7 @@ import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
 
 const { getPort } = require('../../util')
-const appName = 'solid-taste'
-
+const appName = 'solidjs-taste'
 const port = getPort(appName)
 
 export default defineConfig({

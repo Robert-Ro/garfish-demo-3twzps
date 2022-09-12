@@ -5,7 +5,7 @@ import Garfish from 'garfish';
 import configs from '../../../config.json'
 
 ReactDOM.render(<App />, document.getElementById('root'));
-const escapedApps = ['vue3-taste', 'solidjs-taste']
+const escapedApps = ['vue3-taste', 'solidjs-taste', 'svelte-taste']
 
 const apps = Object.keys(configs).filter(k => k !== 'app-main').map(k=>({
   name: configs[k].pkgName,
